@@ -21,7 +21,7 @@ $pil=readline(col("Input Number ","h").col("> ","m"));
 line();
 if($pil==1){goto faucet;
 }elseif($pil==2){goto balance;
-}elseif($pil==3){unlink(a[1]."/Cookie");goto cookie;
+}elseif($pil==3){unlink($a[1]."/Cookie");goto cookie;
 }else{echo col("Bad Number\n","m")."\n";line();goto menu;}
 
 faucet:
