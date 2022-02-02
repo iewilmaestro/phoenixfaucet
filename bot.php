@@ -29,7 +29,7 @@ while(true){
 	$r=Run($host."/user/auto",head(),$data);
 	if(preg_match('/Cloudflare/',$r)){
 		echo col("cloudflare detect\n","m");
-		line();sleep(10);goto faucet;
+		line();sleep(10);goto menu;
 	}
 	$tmr=explode('</span>',explode('<span id="seconds">',$r)[1])[0];
     $token=explode('">',explode('<input type="hidden" name="',$r)[1])[0];
